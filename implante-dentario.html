@@ -603,7 +603,8 @@ class Component extends DCLogic {
         box.appendChild(f);
       } else {
         const v = box.querySelector('video');
-        if (v) v.play();
+        // o atributo controls do HTML é descartado na renderização; ativa aqui
+        if (v) { v.controls = true; v.play(); }
       }
       btn.style.display = 'none';
     };
