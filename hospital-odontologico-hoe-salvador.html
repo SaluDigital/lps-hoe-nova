@@ -78,13 +78,6 @@ details[open] .faq-plus{transform:rotate(45deg)}
   .m-swipe.m-swipe-sm>*{flex-basis:44%}
 }
 
-/* conversão estática: CTA fixos que aparecem após o hero */
-.dc-float{opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .25s,transform .25s,background .2s!important}
-.scrolled .dc-float{opacity:1;transform:none;pointer-events:auto}
-.dc-bar{transform:translateY(110%);transition:transform .25s}
-.scrolled .dc-bar{transform:none}
-@media (max-width:919px){.dc-float{display:none!important}}
-@media (min-width:920px){.dc-bar,.dc-spacer{display:none!important}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 /* hover */
 .hv1:hover{background:#085F59!important;color:#fff!important}
@@ -473,30 +466,13 @@ details[open] .faq-plus{transform:rotate(45deg)}
     </div>
     <p style="margin:48px 0 0;padding-top:24px;border-top:1px solid #DCE3E1;font:400 13px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#4E6269">© 2026, HOE - Hospital de Odontologia Especializada. Todos os direitos reservados. Desenvolvido por SuperDental®</p>
   </div>
-<div class="dc-spacer" aria-hidden="true" style="height:84px"></div></footer>
-
-<!-- WhatsApp flutuante (desktop) -->
-
-  <a class="dc-float sellbot-wpp-open hv3" href="https://wa.me/5571992960598?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp" style="position:fixed;right:28px;bottom:28px;z-index:60;width:58px;height:58px;border-radius:50%;background:#0B7F77;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(12,45,68,.22);transition:transform .2s,background .2s">
-    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-  </a>
-
-<!-- CTA sticky inferior (mobile) -->
-
-  <div class="dc-bar" style="position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid #E1E8E7;padding:10px 16px calc(10px + env(safe-area-inset-bottom))">
-    <a class="sellbot-wpp-open" href="https://wa.me/5571992960598?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" style="display:flex;justify-content:center;align-items:center;gap:10px;min-height:52px;background:#0B7F77;color:#fff;text-decoration:none;font:600 14px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;letter-spacing:.07em;border-radius:999px">
-      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-      AGENDE SUA CONSULTA AGORA
-    </a>
-  </div>
+</footer>
 
 </div>
 
 <script>
 (function(){
-  var d=document,root=d.documentElement,on=false;
-  var tick=function(){var s=window.scrollY>420;if(s!==on){on=s;root.classList.toggle('scrolled',s)}};
-  window.addEventListener('scroll',tick,{passive:true});tick();
+  var d=document;
   d.addEventListener('click',function(e){
     var b=e.target.closest('[data-play]');if(!b)return;
     var box=b.parentElement;
@@ -513,7 +489,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
   d.addEventListener('click',function(e){
     var a=e.target.closest('a[href*="wa.me"]');if(!a)return;
     var s=a.closest('section,footer');
-    (window.dataLayer=window.dataLayer||[]).push({event:'whatsapp_click',cta_location:s?(s.id||s.getAttribute('data-screen-label')||'secao'):(a.classList.contains('dc-float')?'flutuante':'barra-mobile')});
+    (window.dataLayer=window.dataLayer||[]).push({event:'whatsapp_click',cta_location:s?(s.id||s.getAttribute('data-screen-label')||'secao'):'outro'});
   });
   var els=d.querySelectorAll('[data-count]');
   if(!els.length||!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
