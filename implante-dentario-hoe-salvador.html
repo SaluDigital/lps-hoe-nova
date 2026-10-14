@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/webp" sizes="250x250" href="assets/favicon.webp">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="preload" as="image" type="image/avif" imagesrcset="assets/hero-implantes-nova-600.avif 600w, assets/hero-implantes-nova-941.avif 941w" imagesizes="(max-width: 900px) 100vw, 560px" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" imagesrcset="assets/m-tulio-600.webp 600w, assets/m-tulio-960.webp 960w" imagesizes="(max-width: 900px) 100vw, 560px" fetchpriority="high">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://hoeodontologia.com.br/lps/implante-dentario-hoe-salvador.html">
 <meta name="theme-color" content="#0C2D44">
@@ -20,7 +20,7 @@
 <meta property="og:title" content="Implante Dentário em Salvador | HOE Hospital Odontológico">
 <meta property="og:description" content="Implante dentário em Salvador com planejamento especializado, estrutura hospitalar e opções de sedação conforme indicação.">
 <meta property="og:url" content="https://hoeodontologia.com.br/lps/implante-dentario-hoe-salvador.html">
-<meta property="og:image" content="https://hoeodontologia.com.br/lps/assets/hero-implantes-nova-941.webp">
+<meta property="og:image" content="https://hoeodontologia.com.br/lps/assets/m-tulio-960.webp">
 <meta name="twitter:card" content="summary_large_image">
 <title>Implante Dentário em Salvador | HOE Hospital Odontológico</title>
 <meta name="description" content="Implante dentário em Salvador com planejamento especializado, estrutura hospitalar e opções de sedação conforme indicação. Agende sua avaliação na HOE.">
@@ -79,8 +79,7 @@ h3{font:600 20px/1.3 var(--sans);color:var(--ink)}
 .rev figcaption{font:600 15px/1.4 var(--sans);color:var(--text)}
 .rev .q{position:absolute;top:20px;right:22px;width:38px;height:38px;color:var(--sky-2)}
 .rev-d{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3)}
-.rev-d blockquote{color:#fff}
-.rev-d figcaption{color:rgba(255,255,255,.75)}
+.rev-d blockquote{color:#fff}.rev-d figcaption{color:rgba(255,255,255,.75)}
 
 /* Vídeos */
 .vid{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--navy);box-shadow:var(--sh)}
@@ -130,18 +129,29 @@ h3{font:600 20px/1.3 var(--sans);color:var(--ink)}
 .g-score .ph-tag{position:absolute;top:-11px;left:18px}
 .g-score div span:not(.stars){display:block;margin-top:8px;font-size:15px;color:rgba(255,255,255,.8)}
 .g-score .stars{display:block;font-size:22px}
+.g-units{position:relative;z-index:1;margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.g-unit{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border:1px solid rgba(255,255,255,.28);border-radius:12px;color:#fff;text-decoration:none;transition:background .2s,border-color .2s}
+.g-unit:hover,.g-unit:focus-visible{background:rgba(255,255,255,.12);border-color:var(--blue-l);color:#fff}
+.g-unit:hover small,.g-unit:focus-visible small{color:rgba(255,255,255,.9)}
+.g-unit b{display:block;font:600 15px/1.3 var(--sans)}
+.g-unit small{display:block;margin-top:3px;font-size:13px;color:rgba(255,255,255,.72)}
+.g-unit .ic{flex:none;width:18px;height:18px;color:var(--blue-l)}
 .g-link{position:relative;z-index:1;margin-top:22px;align-self:flex-start;display:inline-flex;align-items:center;gap:10px;color:#fff;font:600 15px/1.3 var(--sans);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:4px}
 .g-link:hover{color:var(--blue-l)}
 .g-link .ic{width:18px;height:18px}
-.revs{display:grid;gap:16px}
-.stats{margin-top:24px;display:grid;grid-template-columns:repeat(4,1fr);border-radius:20px;background:linear-gradient(110deg,var(--blue) 0%,var(--blue-d) 45%,var(--navy) 100%);color:rgba(255,255,255,.84);box-shadow:var(--sh)}
-.stats li{padding:clamp(24px,3vw,40px) clamp(18px,2.4vw,34px)}
-.stats li+li{border-left:1px solid rgba(255,255,255,.18)}
-.stats b{display:block;font:400 clamp(26px,2.7vw,36px)/1.1 var(--serif);color:#fff}
-.stats span{display:block;margin-top:10px;font-size:16px;line-height:1.4}
-.stats .ph{margin:10px;padding:clamp(14px,2vw,30px) clamp(10px,1.6vw,24px);border-radius:12px;border-color:rgba(255,255,255,.55)!important}
-.stats .ph .ph-tag{margin:0 0 10px}
-.mosaic{margin-top:24px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:16px}
+.revs{display:flex;gap:14px;align-items:flex-start}
+.revs-vp{position:relative;flex:1;min-width:0;height:640px;overflow:hidden;transition:height .7s cubic-bezier(.65,0,.35,1)}
+.revs-nav{align-self:center}
+.revs .rev{padding:22px 26px;gap:10px}
+.revs .rev blockquote{font-size:16px}
+.revs-track{position:absolute;top:0;left:0;right:0;display:flex;flex-direction:column;gap:16px;margin:0;padding:0;list-style:none}
+.revs-track.anim{transition:transform .7s cubic-bezier(.65,0,.35,1)}
+.revs-nav{display:flex;flex-direction:column;justify-content:center;gap:10px}
+.revs-nav button{width:44px;height:44px;padding:0;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--blue-d);display:grid;place-items:center;cursor:pointer;box-shadow:var(--sh-s);transition:background .2s,color .2s,border-color .2s}
+.revs-nav button:hover,.revs-nav button:focus-visible{background:var(--blue);border-color:var(--blue);color:#fff}
+.revs-nav .ic{width:20px;height:20px;transform:rotate(-90deg)}
+.revs-nav .nx .ic{transform:rotate(90deg)}
+.mosaic{margin-top:16px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:16px}
 .mosaic figure{position:relative;height:clamp(240px,26vw,340px);border-radius:var(--r);overflow:hidden}
 .mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
 .mosaic figure:hover img{transform:scale(1.04)}
@@ -326,9 +336,6 @@ footer{background:#fff;font-size:15px;line-height:1.7}
   .dep1 .vid{max-width:380px;width:100%;margin:0 auto}
   .sed-media{max-width:380px}
   .chip{right:-8px}
-  .stats{grid-template-columns:1fr 1fr}
-  .stats li:nth-child(3){border-left:0}
-  .stats li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.18)}
   .steps{grid-template-columns:1fr;gap:0}
   .steps li{display:grid;grid-template-columns:60px 1fr;column-gap:20px;text-align:left;padding:0 0 30px}
   .steps .num{grid-row:1/3;width:60px;height:60px;margin:0;font-size:26px;box-shadow:0 0 0 6px var(--sky)}
@@ -341,6 +348,10 @@ footer{background:#fff;font-size:15px;line-height:1.7}
   .band{justify-content:center;text-align:center}
 }
 @media (max-width:640px){
+  .g-units{grid-template-columns:1fr}
+  .revs{gap:10px}
+  .revs .rev{padding:20px 20px}
+  .revs-nav button{width:40px;height:40px}
   body{font-size:17px}
   .cta{width:100%;padding:20px 18px;font-size:14px}
   .hero-fig::before{border-radius:50% 50% 16px 16px/45% 45% 16px 16px}
@@ -417,12 +428,10 @@ footer{background:#fff;font-size:15px;line-height:1.7}
         <h1><span class="h1-svc">Implante Dentário em Salvador:</span> volte a mastigar e <em>sorrir com confiança.</em></h1>
         <p class="hero-sub">Conheça o tratamento com implantes dentários da HOE, com planejamento especializado, estrutura hospitalar e opções de sedação conforme indicação.</p>
         <div class="cta-row">
-          <a class="cta sellbot-wpp-open" href="https://wa.me/5571992960598?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20saber%20mais%20sobre%20implantes." target="_blank" rel="noopener"><svg class="ic ic-f"><use href="#i-wa"/></svg>Agende sua avaliação</a>
-          <span class="cta-hint">Atendimento pelo WhatsApp.</span>
-        </div>
+          <a class="cta sellbot-wpp-open" href="https://wa.me/5571992960598?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20saber%20mais%20sobre%20implantes." target="_blank" rel="noopener"><svg class="ic ic-f"><use href="#i-wa"/></svg>Agende sua avaliação</a>        </div>
       </div>
       <div class="hero-fig">
-        <picture><source type="image/avif" srcset="assets/hero-implantes-nova-600.avif 600w, assets/hero-implantes-nova-941.avif 941w" sizes="(max-width: 900px) 100vw, 560px"><img class="hero-img" src="assets/hero-implantes-nova-941.webp" srcset="assets/hero-implantes-nova-600.webp 600w, assets/hero-implantes-nova-941.webp 941w" sizes="(max-width: 900px) 100vw, 560px" alt="Senhor sorrindo à mesa enquanto almoça uma refeição com salada" width="941" height="1672" fetchpriority="high"></picture>
+        <img class="hero-img" src="assets/m-tulio-960.webp" srcset="assets/m-tulio-600.webp 600w, assets/m-tulio-960.webp 960w" sizes="(max-width: 900px) 100vw, 560px" alt="Paciente da HOE sorrindo com naturalidade" width="960" height="1280" fetchpriority="high">
         <div class="hero-card"><span class="ico"><svg class="ic"><use href="#i-hosp"/></svg></span><span>Hospital Odontológico<small>em Salvador, Bahia</small></span></div>
       </div>
     </div>
@@ -443,61 +452,69 @@ footer{background:#fff;font-size:15px;line-height:1.7}
       <div class="g-card rv">
         <span class="eyebrow">Avaliações no Google</span>
         <h2>O que os pacientes dizem <em>sobre a HOE.</em></h2>
-        <!-- TODO: preencher nota, quantidade de avaliações e link do perfil da HOE no Google -->
-        <div class="g-score ph">
-          <span class="ph-tag">Preencher</span>
-          <b>[nota]</b>
-          <div><span class="stars" aria-hidden="true">★★★★★</span><span><strong>[nº]</strong> avaliações no Google</span></div>
+        <div class="g-score">
+          <b>4,9</b>
+          <div><span class="stars" aria-label="Nota 4,9 de 5">★★★★★</span><span><strong>+660</strong> avaliações no Google</span></div>
         </div>
-        <a class="g-link" href="#" data-todo="link-google" target="_blank" rel="noopener">Ver avaliações no Google<svg class="ic"><use href="#i-arrow"/></svg></a>
+        <div class="g-units">
+          <a class="g-unit" href="https://www.google.com/maps/search/?api=1&amp;query=HOE+Hospital+de+Odontologia+Especializada%2C+Av.+Manoel+Dias+da+Silva%2C+1783%2C+Pituba%2C+Salvador+-+BA" target="_blank" rel="noopener"><span><b>Unidade Pituba</b><small>4,9 ★ · 358 avaliações</small></span><svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="g-unit" href="https://www.google.com/maps/search/?api=1&amp;query=HOE+Shopping+Paralela%2C+Av.+Lu%C3%ADs+Viana+Filho%2C+8544%2C+Salvador+-+BA" target="_blank" rel="noopener"><span><b>Unidade Paralela</b><small>4,9 ★ · 307 avaliações</small></span><svg class="ic"><use href="#i-arrow"/></svg></a>
+        </div>
       </div>
-      <!-- TODO: substituir pelos textos reais das avaliações do Google -->
-      <div class="revs">
-        <figure class="rev ph rv">
-          <svg class="ic ic-f q"><use href="#i-quote"/></svg>
-          <span class="ph-tag">Avaliação 1 · preencher</span>
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <blockquote>[Texto da avaliação do Google]</blockquote>
-          <figcaption>[Nome do paciente] · Google</figcaption>
-        </figure>
-        <figure class="rev ph rv">
-          <svg class="ic ic-f q"><use href="#i-quote"/></svg>
-          <span class="ph-tag">Avaliação 2 · preencher</span>
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <blockquote>[Texto da avaliação do Google]</blockquote>
-          <figcaption>[Nome do paciente] · Google</figcaption>
-        </figure>
-        <figure class="rev ph rv">
-          <svg class="ic ic-f q"><use href="#i-quote"/></svg>
-          <span class="ph-tag">Avaliação 3 · preencher</span>
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <blockquote>[Texto da avaliação do Google]</blockquote>
-          <figcaption>[Nome do paciente] · Google</figcaption>
-        </figure>
+      <div class="revs rv" data-revs role="region" aria-roledescription="carrossel" aria-label="Avaliações de pacientes no Google">
+        <div class="revs-vp">
+          <div class="revs-track">
+            <figure class="rev">
+              <svg class="ic ic-f q"><use href="#i-quote"/></svg>
+              <span class="stars" aria-label="5 estrelas">★★★★★</span>
+              <blockquote>Excelente atendimento! Melhor clínica odontológica de Salvador, indicação ótima! Dr. Bruno, adorei o resultado! Obrigada!!!</blockquote>
+              <figcaption>Maria Eduarda Campos · Google</figcaption>
+            </figure>
+            <figure class="rev">
+              <svg class="ic ic-f q"><use href="#i-quote"/></svg>
+              <span class="stars" aria-label="5 estrelas">★★★★★</span>
+              <blockquote>Como hospital especializado, ele realmente faz o que promete. Profissionais competentes, educados e atenciosos.</blockquote>
+              <figcaption>Mara Lima · Google</figcaption>
+            </figure>
+            <figure class="rev">
+              <svg class="ic ic-f q"><use href="#i-quote"/></svg>
+              <span class="stars" aria-label="5 estrelas">★★★★★</span>
+              <blockquote>Foi tudo ótimo. Sou sempre bem atendido, desde a recepção até a Dra. Simone, que é uma ótima profissional.</blockquote>
+              <figcaption>Esmeraldo Júnior · Google</figcaption>
+            </figure>
+            <figure class="rev">
+              <svg class="ic ic-f q"><use href="#i-quote"/></svg>
+              <span class="stars" aria-label="5 estrelas">★★★★★</span>
+              <blockquote>Excelente atendimento desde a recepção até o tratamento! Super indico!</blockquote>
+              <figcaption>Paula Reis · Google</figcaption>
+            </figure>
+            <figure class="rev">
+              <svg class="ic ic-f q"><use href="#i-quote"/></svg>
+              <span class="stars" aria-label="5 estrelas">★★★★★</span>
+              <blockquote>Muito bom!! Principalmente o atendimento. Profissionais excelentes e muito competentes. Voltarei novamente, sem dúvidas.</blockquote>
+              <figcaption>Gley Lopes · Google</figcaption>
+            </figure>
+            <figure class="rev">
+              <svg class="ic ic-f q"><use href="#i-quote"/></svg>
+              <span class="stars" aria-label="5 estrelas">★★★★★</span>
+              <blockquote>Não é sobre o valor! E sim referente ao conjunto de experiências vividas! Da recepção dos colaboradores ao consultório do especialista (cirurgião-dentista), um atendimento que transmite segurança, profissionalismo e atenção!! Super recomendo!</blockquote>
+              <figcaption>Jean Cruz · Google</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="revs-nav">
+          <button type="button" class="pv" data-revs-go="-1" aria-label="Avaliação anterior"><svg class="ic"><use href="#i-arrow"/></svg></button>
+          <button type="button" class="nx" data-revs-go="1" aria-label="Próxima avaliação"><svg class="ic"><use href="#i-arrow"/></svg></button>
+        </div>
       </div>
-    </div>
-
-    <ul class="stats rv">
-      <!-- TODO: indicador de pacientes atendidos aguardando validação do cliente -->
-      <li class="ph"><span class="ph-tag">Validar número</span><b>+50 mil</b><span>pacientes atendidos</span></li>
-      <li><b>+10 anos</b><span>de experiência</span></li>
-      <li><b>2 unidades</b><span>em Salvador</span></li>
-      <li><b>Centro cirúrgico</b><span>próprio, em estrutura de Hospital Odontológico</span></li>
-    </ul>
-
-    <div class="mosaic rv">
-      <figure><img src="assets/equipe-1600.webp" srcset="assets/equipe-800.webp 800w, assets/equipe-1600.webp 1600w" sizes="(max-width: 640px) 100vw, 480px" alt="Dentistas da equipe HOE sorrindo lado a lado" width="1600" height="1067" loading="lazy" style="object-position:50% 18%"><figcaption>Equipe HOE</figcaption></figure>
-      <figure><img src="assets/clin-5-800.webp" srcset="assets/clin-5-500.webp 500w, assets/clin-5-800.webp 800w" sizes="(max-width: 640px) 50vw, 320px" alt="Equipe de recepção da HOE sorrindo no balcão de atendimento" width="800" height="533" loading="lazy"><figcaption>Recepção</figcaption></figure>
-      <figure><img src="assets/centro-cirurgico-1200.webp" srcset="assets/centro-cirurgico-700.webp 700w, assets/centro-cirurgico-1200.webp 1200w" sizes="(max-width: 640px) 50vw, 320px" alt="Cirurgião-dentista da HOE realizando procedimento no centro cirúrgico" width="1200" height="1800" loading="lazy" style="object-position:50% 50%"><figcaption>Centro cirúrgico</figcaption></figure>
-    </div>
-  </div>
+    </div>  </div>
 </section>
 
 <!-- 03 IDENTIFICAÇÃO -->
 <section id="identificacao" class="sec sky ident">
   <div class="wrap split">
     <div class="frame m-first rv">
-      <img src="assets/hesita-941.webp" srcset="assets/hesita-600.webp 600w, assets/hesita-941.webp 941w" sizes="(max-width: 860px) 100vw, 480px" alt="Senhora à mesa com a mão no queixo, pensativa diante de dois pratos" width="941" height="1672" loading="lazy" style="object-position:50% 35%">
+      <img src="assets/paciente-sorriso-960.webp" srcset="assets/paciente-sorriso-600.webp 600w, assets/paciente-sorriso-960.webp 960w" sizes="(max-width: 860px) 100vw, 480px" alt="Paciente da HOE sorrindo, com os dentes à mostra" width="960" height="1280" loading="lazy" style="object-position:50% 30%">
     </div>
     <div class="rv">
       <span class="eyebrow">Talvez você se reconheça</span>
@@ -547,11 +564,9 @@ footer{background:#fff;font-size:15px;line-height:1.7}
       <div>
         <span class="eyebrow">Depoimento de paciente</span>
         <h2>Quem já fez o implante na HOE <em>conta como foi.</em></h2>
-        <!-- TODO: avaliação real sobre implante (uso autorizado) -->
-        <figure class="rev rev-d ph">
-          <span class="ph-tag">Depoimento sobre implante · preencher</span>
-          <blockquote>[Texto do depoimento de paciente sobre o tratamento com implantes]</blockquote>
-          <figcaption>[Nome do paciente] · [origem]</figcaption>
+        <figure class="rev rev-d">
+          <blockquote>“Me transformou completamente, levantou bastante minha autoestima. Muito satisfeita mesmo, nota 10!”</blockquote>
+          <figcaption>Paciente de implante dentário na HOE</figcaption>
         </figure>
         <div class="cta-row">
           <a class="cta cta-light sellbot-wpp-open" href="https://wa.me/5571992960598?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20saber%20mais%20sobre%20implantes." target="_blank" rel="noopener"><svg class="ic ic-f"><use href="#i-wa"/></svg>Agende sua avaliação</a>
@@ -591,6 +606,11 @@ footer{background:#fff;font-size:15px;line-height:1.7}
       <img class="b-tall" src="assets/cirurgia-2-800.webp" srcset="assets/cirurgia-2-480.webp 480w, assets/cirurgia-2-800.webp 800w" sizes="(max-width: 860px) 50vw, 280px" alt="Cirurgião-dentista da HOE se paramenta para a cirurgia" width="800" height="1200" loading="lazy" style="object-position:50% 30%">
       <img src="assets/clin-6-800.webp" srcset="assets/clin-6-500.webp 500w, assets/clin-6-800.webp 800w" sizes="(max-width: 860px) 50vw, 280px" alt="Paciente sorrindo durante exame de tomografia na HOE" width="800" height="1200" loading="lazy" style="object-position:50% 35%">
       <img src="assets/clin-1-800.webp" srcset="assets/clin-1-500.webp 500w, assets/clin-1-800.webp 800w" sizes="(max-width: 860px) 50vw, 280px" alt="Sala de espera da HOE com poltronas confortáveis" width="800" height="1200" loading="lazy" style="object-position:50% 60%">
+    </div>
+    <div class="mosaic rv">
+      <figure><img src="assets/equipe-1600.webp" srcset="assets/equipe-800.webp 800w, assets/equipe-1600.webp 1600w" sizes="(max-width: 640px) 100vw, 480px" alt="Dentistas da equipe HOE sorrindo lado a lado" width="1600" height="1067" loading="lazy" style="object-position:50% 18%"><figcaption>Equipe HOE</figcaption></figure>
+      <figure><img src="assets/clin-5-800.webp" srcset="assets/clin-5-500.webp 500w, assets/clin-5-800.webp 800w" sizes="(max-width: 640px) 50vw, 320px" alt="Equipe de recepção da HOE sorrindo no balcão de atendimento" width="800" height="533" loading="lazy"><figcaption>Recepção</figcaption></figure>
+      <figure><img src="assets/centro-cirurgico-1200.webp" srcset="assets/centro-cirurgico-700.webp 700w, assets/centro-cirurgico-1200.webp 1200w" sizes="(max-width: 640px) 50vw, 320px" alt="Cirurgião-dentista da HOE realizando procedimento no centro cirúrgico" width="1200" height="1800" loading="lazy" style="object-position:50% 50%"><figcaption>Centro cirúrgico</figcaption></figure>
     </div>
   </div>
 </section>
@@ -666,12 +686,7 @@ footer{background:#fff;font-size:15px;line-height:1.7}
       <div style="position:relative">
         <span class="eyebrow">Depoimentos de pacientes</span>
         <h2>Acolhimento e cuidado, contados por <em>quem viveu o tratamento.</em></h2>
-        <!-- TODO: avaliação real sobre acolhimento e cuidado (uso autorizado) -->
-        <figure class="rev ph">
-          <span class="ph-tag">Depoimento sobre acolhimento · preencher</span>
-          <blockquote>[Texto do depoimento de paciente sobre atendimento, cuidado e confiança]</blockquote>
-          <figcaption>[Nome do paciente] · [origem]</figcaption>
-        </figure>
+        <p class="lead">Nos vídeos, pacientes da HOE contam como se sentiram em cada etapa: da primeira conversa na recepção ao resultado do tratamento.</p>
       </div>
     </div>
     <div class="vids rv">
@@ -837,6 +852,51 @@ footer{background:#fff;font-size:15px;line-height:1.7}
     var s=a.closest('section,footer');
     (window.dataLayer=window.dataLayer||[]).push({event:'whatsapp_click',cta_location:s?(s.id||'secao'):'outro'});
   });
+  var rs=d.querySelector('[data-revs]');
+  if(rs){
+    var tr=rs.querySelector('.revs-track'),busy=false,tm,
+        rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var gap=function(){return parseFloat(getComputedStyle(tr).rowGap)||16};
+    var step=function(el){return el.offsetHeight+gap()};
+    var vis=function(s){
+      var cs=tr.children,n=cs.length,h=0;
+      for(var i=0;i<3;i++)h+=cs[(s+i)%n].offsetHeight;
+      return h+2*gap();
+    };
+    var setH=function(s){tr.parentNode.style.height=vis(s)+'px'};
+    var fit=function(){
+      var m=0;
+      for(var i=0;i<tr.children.length;i++)m=Math.max(m,vis(i));
+      rs.style.minHeight=matchMedia('(max-width:860px)').matches?m+'px':'';setH(0);
+    };
+    var rt;fit();
+    window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(fit,150)});
+    var after=function(cb){
+      var t,f=function(e){if(e&&e.target!==tr)return;tr.removeEventListener('transitionend',f);clearTimeout(t);tr.classList.remove('anim');cb();busy=false};
+      t=setTimeout(f,900);tr.addEventListener('transitionend',f);
+    };
+    var go=function(dir){
+      if(busy)return;
+      if(rm){dir>0?tr.appendChild(tr.firstElementChild):tr.insertBefore(tr.lastElementChild,tr.firstElementChild);setH(0);return}
+      busy=true;
+      if(dir>0){
+        setH(1);tr.classList.add('anim');tr.style.transform='translateY(-'+step(tr.firstElementChild)+'px)';
+        after(function(){tr.appendChild(tr.firstElementChild);tr.style.transform=''});
+      }else{
+        var l=tr.lastElementChild;tr.insertBefore(l,tr.firstElementChild);
+        tr.style.transform='translateY(-'+step(l)+'px)';void tr.offsetHeight;
+        setH(0);tr.classList.add('anim');tr.style.transform='';
+        after(function(){});
+      }
+    };
+    var stop=function(){clearInterval(tm)};
+    var play=function(){stop();if(!rm)tm=setInterval(function(){go(1)},5000)};
+    rs.addEventListener('click',function(e){var b=e.target.closest('[data-revs-go]');if(!b)return;go(+b.dataset.revsGo);play()});
+    rs.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')stop()});
+    rs.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse')play()});
+    d.addEventListener('visibilitychange',function(){d.hidden?stop():play()});
+    play();
+  }
   var rv=d.querySelectorAll('.rv');
   if(!('IntersectionObserver' in window)){rv.forEach(function(el){el.classList.add('in')});return}
   var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
