@@ -365,6 +365,10 @@ footer{background:#fff;font-size:15px;line-height:1.7}
   .cta{width:100%;padding:20px 18px;font-size:14px}
   .hero-fig::before{border-radius:50% 50% 16px 16px/45% 45% 16px 16px}
   .hero-img{aspect-ratio:1;border-radius:50% 50% 16px 16px/45% 45% 16px 16px}
+  .hero-fig{margin-bottom:34px}
+  .hero-card{left:12px;bottom:-34px;padding:10px 16px 10px 10px;gap:12px;font-size:14px}
+  .hero-card small{font-size:13px}
+  .hero-card .ico{width:38px;height:38px}
   .trust li{flex-direction:column;align-items:flex-start;gap:10px;padding:18px 16px}
   .trust li:nth-child(even){border-left:1px solid var(--line)}
   .ben-top{padding-bottom:150px}
@@ -440,7 +444,7 @@ footer{background:#fff;font-size:15px;line-height:1.7}
           <a class="cta sellbot-wpp-open" href="https://wa.me/5571992960598?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20com%20seda%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg class="ic ic-f"><use href="#i-wa"/></svg>Converse com nossa equipe</a>        </div>
       </div>
       <div class="hero-fig">
-        <img class="hero-img" src="assets/m-tulio-960.webp" srcset="assets/m-tulio-600.webp 600w, assets/m-tulio-960.webp 960w" sizes="(max-width: 900px) 100vw, 560px" alt="Paciente da HOE sorrindo com naturalidade" width="960" height="1280" fetchpriority="high">
+        <img class="hero-img" src="assets/hero.webp" sizes="(max-width: 900px) 100vw, 560px" alt="Paciente da HOE sorrindo com naturalidade" width="1200" height="1600" fetchpriority="high">
         <div class="hero-card"><span class="ico"><svg class="ic"><use href="#i-hosp"/></svg></span><span>Hospital Odontológico<small>em Salvador, Bahia</small></span></div>
       </div>
     </div>
@@ -517,7 +521,10 @@ footer{background:#fff;font-size:15px;line-height:1.7}
 <section id="identificacao" class="sec sky ident">
   <div class="wrap split">
     <div class="frame m-first rv">
-      <div class="ph ph-box"><span class="ph-tag">Imagem a enviar</span><span>Paciente em atendimento acolhedor</span></div>
+      <div class="vid" style="z-index:1">
+        <video src="assets/capa-video-odontofobia.mp4" poster="assets/lp/pv-odontofobia-medo.webp" preload="none" playsinline aria-label="Dentista da HOE fala com pacientes que têm medo ou ansiedade"></video>
+        <button class="play" type="button" data-play="video" aria-label="Assistir ao vídeo: dentista da HOE fala sobre medo e ansiedade"><span><svg class="ic ic-f"><use href="#i-play"/></svg></span></button>
+      </div>
     </div>
     <div class="rv">
       <span class="eyebrow">Talvez você se reconheça</span>
@@ -560,13 +567,15 @@ footer{background:#fff;font-size:15px;line-height:1.7}
   <div class="wrap">
     <div class="dep1-panel rv">
       <svg class="ic ic-f q"><use href="#i-quote"/></svg>
-      <div class="vid ph ph-box"><span class="ph-tag">Vídeo a enviar</span><span>Depoimento de paciente</span></div>
+      <div class="vid">
+        <video src="assets/paciente3.mp4" poster="assets/lp/capa-sedacao.webp" preload="none" playsinline aria-label="Depoimento de paciente sobre o tratamento com sedação na HOE"></video>
+        <button class="play" type="button" data-play="video" aria-label="Assistir ao vídeo: depoimento de paciente da HOE"><span><svg class="ic ic-f"><use href="#i-play"/></svg></span></button>
+      </div>
       <div>
         <span class="eyebrow">Depoimento de paciente</span>
         <h2>Quem já foi atendido na HOE <em>conta como foi.</em></h2>
         <figure class="rev rev-d">
-          <blockquote>“Foi tudo ótimo. Sou sempre bem atendido, desde a recepção até a Dra. Simone, que é uma ótima profissional.”</blockquote>
-          <figcaption>Esmeraldo Júnior · Google</figcaption>
+          <blockquote>Na HOE, acolhimento, cuidado e segurança fazem parte de cada atendimento.<br><br>Assista ao relato desta paciente e fale com a nossa equipe para entender o que é possível no seu caso.</blockquote>
         </figure>
         <div class="cta-row">
           <a class="cta cta-light sellbot-wpp-open" href="https://wa.me/5571992960598?text=Ol%C3%A1%2C%20vim%20do%20Google%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20tratamento%20com%20seda%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg class="ic ic-f"><use href="#i-wa"/></svg>Converse com nossa equipe</a>
@@ -620,8 +629,8 @@ footer{background:#fff;font-size:15px;line-height:1.7}
   <div class="wrap split">
     <div class="sed-media m-first rv">
       <div class="vid">
-        <video src="assets/capa-video-odontofobia.mp4" poster="assets/lp/pv-odontofobia-medo.webp" preload="none" playsinline aria-label="Dentista da HOE fala com pacientes que têm medo ou ansiedade"></video>
-        <button class="play" type="button" data-play="video" aria-label="Assistir ao vídeo: dentista da HOE fala sobre medo e ansiedade"><span><svg class="ic ic-f"><use href="#i-play"/></svg></span></button>
+        <video src="assets/video-soneca.mp4" poster="assets/lp/pp-poster-soneca.webp" preload="none" playsinline aria-label="Paciente relaxado durante atendimento com sedação na HOE"></video>
+        <button class="play" type="button" data-play="video" aria-label="Assistir ao vídeo: paciente relaxado durante atendimento com sedação"><span><svg class="ic ic-f"><use href="#i-play"/></svg></span></button>
       </div>
       <span class="chip"><svg class="ic"><use href="#i-moon"/></svg>Conforme indicação</span>
     </div>
@@ -652,7 +661,7 @@ footer{background:#fff;font-size:15px;line-height:1.7}
         <h2>Profissionais que ouvem, explicam <em>e acompanham.</em></h2>
         <p class="lead">Para quem tem medo, a forma de ser atendido pesa tanto quanto o procedimento. Por isso a equipe começa ouvindo você e explica cada etapa antes de iniciar.</p>
       </div>
-      <div class="ph ph-box m-first rv"><span class="ph-tag">Imagem a enviar</span><span>Dentista conversando com paciente</span></div>
+      <img class="m-first rv" src="assets/conversa-1600.webp" srcset="assets/conversa-800.webp 800w, assets/conversa-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 520px" alt="Dentista da HOE conversa com a paciente, que sorri" width="1600" height="1067" loading="lazy">
     </div>
     <ul class="team" id="team">
       <li><img src="assets/equipe-webp/tulio-ferreira.webp" alt="Dr. Túlio Ferreira" width="360" height="450" loading="lazy"><div><b>Dr. Túlio Ferreira</b><span>Cirurgião e Diretor Clínico</span><span class="cro">CRO-BA 12.343</span></div></li>
@@ -690,8 +699,14 @@ footer{background:#fff;font-size:15px;line-height:1.7}
       </div>
     </div>
     <div class="vids rv">
-      <div class="vid ph ph-box"><span class="ph-tag">Vídeo a enviar</span><span>Depoimento de paciente</span></div>
-      <div class="vid ph ph-box"><span class="ph-tag">Vídeo a enviar</span><span>Depoimento de paciente</span></div>
+      <div class="vid">
+        <video src="assets/paciente2.mp4" poster="assets/lp/pp-poster-depoimento2.webp" preload="none" playsinline aria-label="Depoimento de paciente sobre o atendimento na HOE"></video>
+        <button class="play" type="button" data-play="video" aria-label="Assistir ao depoimento de paciente da HOE"><span><svg class="ic ic-f"><use href="#i-play"/></svg></span></button>
+      </div>
+      <div class="vid">
+        <video src="assets/paciente1.mp4#t=0.1" preload="metadata" playsinline aria-label="Depoimento de paciente sobre o atendimento na HOE"></video>
+        <button class="play" type="button" data-play="video" aria-label="Assistir ao depoimento de paciente da HOE"><span><svg class="ic ic-f"><use href="#i-play"/></svg></span></button>
+      </div>
     </div>
   </div>
 </section>
